@@ -63,8 +63,6 @@ class PokemonPage extends React.Component {
 
 
   render() {
-
-    let newPokemonArray = this.filteredPokemon()
     return (
       <Container>
         <h1>Pokemon Searcher</h1>
@@ -73,7 +71,7 @@ class PokemonPage extends React.Component {
         <br />
         <Search onSearchChange={this.searchForm} searchChange={this.formChange}/>
         <br />
-        <PokemonCollection pokemon={newPokemonArray} />
+        <PokemonCollection pokemon={this.filteredPokemon()} />
       </Container>
     )
   }
