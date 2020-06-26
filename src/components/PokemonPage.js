@@ -13,7 +13,6 @@ class PokemonPage extends React.Component {
     hp: "", 
     front: "", 
     back: ""
-  
   }
 
   componentDidMount(){
@@ -30,11 +29,11 @@ class PokemonPage extends React.Component {
     return this.state.allPokemon.filter(pokemon => pokemon.name.includes(this.state.searchForm))
   }
 
-  newPokemon = (event) => {
+  ewPokemon = (event) => {
     event.preventDefault()
     let body = {
       name: this.state.name,
-      hp: this.state.hp,
+      hp: parseInt(this.state.hp),
       sprites: {
         front: this.state.front,
         back: this.state.back
@@ -48,8 +47,8 @@ class PokemonPage extends React.Component {
       },
       body: JSON.stringify(body)
     }).then(res => res.json())
-    .then(newPokemon => this.setState({allPokemon: [...this.state.allPokemon, newPokemon]}))
-    .then(this.setState({
+    .then(newPokemon => this.setState({
+      allPokemon: [...this.state.allPokemon, newPokemon],
       name: '',
       hp: '',
       front: '',
