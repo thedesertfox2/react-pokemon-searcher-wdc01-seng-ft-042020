@@ -29,8 +29,8 @@ class PokemonPage extends React.Component {
     return this.state.allPokemon.filter(pokemon => pokemon.name.includes(this.state.searchForm))
   }
 
-  ewPokemon = (event) => {
-    event.preventDefault()
+  newPokemon = (event) => {
+    event.preventDefault() 
     let body = {
       name: this.state.name,
       hp: parseInt(this.state.hp),
@@ -63,6 +63,7 @@ class PokemonPage extends React.Component {
 
 
   render() {
+
     return (
       <Container>
         <h1>Pokemon Searcher</h1>
