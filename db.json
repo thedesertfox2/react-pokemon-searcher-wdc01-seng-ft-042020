@@ -1394,6 +1394,78 @@
         "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png"
       },
       "id": 156
+    },
+    {
+      "name": "",
+      "hp": "",
+      "sprites": {
+        "front": "",
+        "back": ""
+      },
+      "id": 157
+    },
+    {
+      "name": "",
+      "hp": "",
+      "sprites": {
+        "front": "",
+        "back": ""
+      },
+      "id": 158
+    },
+    {
+      "name": "",
+      "hp": "",
+      "sprites": {
+        "front": "",
+        "back": ""
+      },
+      "id": 159
+    },
+    {
+      "name": "",
+      "hp": "",
+      "sprites": {
+        "front": "",
+        "back": ""
+      },
+      "id": 160
+    },
+    {
+      "name": "",
+      "hp": "",
+      "sprites": {
+        "front": "",
+        "back": ""
+      },
+      "id": 161
+    },
+    {
+      "name": "",
+      "hp": "",
+      "sprites": {
+        "front": "",
+        "back": ""
+      },
+      "id": 162
+    },
+    {
+      "name": "",
+      "hp": "",
+      "sprites": {
+        "front": "",
+        "back": ""
+      },
+      "id": 163
+    },
+    {
+      "name": "",
+      "hp": "",
+      "sprites": {
+        "front": "",
+        "back": ""
+      },
+      "id": 164
     }
   ]
 }

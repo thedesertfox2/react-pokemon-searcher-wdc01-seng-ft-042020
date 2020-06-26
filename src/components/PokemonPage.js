@@ -58,7 +58,7 @@ class PokemonPage extends React.Component {
     
   }
 
-  pokemonFormChange = (event) => {
+  formChange = (event) => {
     this.setState({[event.target.name]: event.target.value})
   }
 
@@ -70,9 +70,9 @@ class PokemonPage extends React.Component {
       <Container>
         <h1>Pokemon Searcher</h1>
         <br />
-        <PokemonForm newPokemon={this.newPokemon} pokemonChange={this.pokemonFormChange} name={this.state.name} hp={this.state.hp} front={this.state.front} back={this.state.back}/>
+        <PokemonForm newPokemon={this.newPokemon} pokemonChange={this.formChange} name={this.state.name} hp={this.state.hp} front={this.state.front} back={this.state.back}/>
         <br />
-        <Search onSearchChange={this.searchForm}/>
+        <Search onSearchChange={this.searchForm} searchChange={this.formChange}/>
         <br />
         <PokemonCollection pokemon={newPokemonArray} />
       </Container>
