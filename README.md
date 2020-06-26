@@ -38,3 +38,13 @@ Be sure to use good programming practices, such as clear variable names and
 single responsibility functions. We want our react app to be clean, easy to
 read and understand, and of course, easy to to debug, or even add more
 features to later.
+
+
+
+|- App 
+  |- PokemonPage *State - AllPokemon: [], SearchForm: "", NewPokemon: { Name: "", HP: "", FrontUrl: "", BackUrl: ""} 
+    |- PokemonForm
+    |- Search
+    |- PokemonCollection
+      |- PokemonCard *State CardOrientation: boolean
+
